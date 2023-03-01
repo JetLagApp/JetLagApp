@@ -11,6 +11,7 @@
 		0EE9548329739227001F7EE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE9548229739227001F7EE4 /* ContentView.swift */; };
 		0EE9548529739228001F7EE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE9548429739228001F7EE4 /* Assets.xcassets */; };
 		0EE9548829739228001F7EE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE9548729739228001F7EE4 /* Preview Assets.xcassets */; };
+		A86B5BA529AF175B00D455A4 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86B5BA429AF175B00D455A4 /* Extension+Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0EE9548429739228001F7EE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EE9548729739228001F7EE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A85516BD2973A179001A5A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A86B5BA429AF175B00D455A4 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				A85516BD2973A179001A5A73 /* Info.plist */,
+				A86B5BA429AF175B00D455A4 /* Extension+Color.swift */,
 				0EE9548029739227001F7EE4 /* JetLagAppApp.swift */,
 				0EE9548229739227001F7EE4 /* ContentView.swift */,
 				0EE9548429739228001F7EE4 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE9548329739227001F7EE4 /* ContentView.swift in Sources */,
+				A86B5BA529AF175B00D455A4 /* Extension+Color.swift in Sources */,
 				0EE9548129739227001F7EE4 /* JetLagAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
