@@ -18,7 +18,7 @@ struct JetLagAppApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                ContentView()
+                HomeView()
                     .tabItem {
                         Label("홈", image: "tabbarHome")       
                     }
