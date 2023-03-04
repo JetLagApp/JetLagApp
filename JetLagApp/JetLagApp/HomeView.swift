@@ -11,12 +11,60 @@ struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel = HomeViewModel()
     
     var body: some View {
-        HStack(alignment: .bottom) {
-            Text(viewModel.currentTimeString)
-                .font(.system(size: 47.27, weight: .bold))
-            Text(viewModel.dayOfTheWeek)
-                .font(.system(size: 11.82, weight: .bold))
-                .padding(.bottom, 10)
+        VStack {
+            /// Today timer
+            HStack(alignment: .bottom) {
+                Text(viewModel.currentTimeString)
+                    .font(.system(size: 47.27, weight: .bold))
+                Text(viewModel.dayOfTheWeek)
+                    .font(.system(size: 11.82, weight: .bold))
+                    .padding(.bottom, 10)
+            }
+            
+            /// Alarm slide
+            HStack {
+                Button {
+                    withAnimation {
+                        viewModel.alarmSlideShowingButtonTouched()
+                    }
+                } label: {
+                    Rectangle()
+                        .frame(width: 50, height: 44)
+                        .foregroundColor(.init(hex: 0x2C2551))
+                        .cornerRadius(17, corners: .topRight)
+                        .cornerRadius(17, corners: .bottomRight)
+                        .overlay {
+                            Image("homeViewClock")
+                        }
+                }
+                Spacer()
+            }
+            .background {
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Text(viewModel.currentHourAndMinuteString)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                        Spacer()
+                        Toggle("알람 설정 버튼", isOn: $viewModel.isAlarmOn)
+                            .labelsHidden()
+                            .padding(.trailing, 16)
+                    }
+                    Spacer()
+                    Divider()
+                        .background(Color.init(hex: 0x2C2551))
+                }
+                .background(Color.init(hex: 0xF1F1F1))
+                .offset(
+                    CGSize(
+                        width: viewModel.isAlarmSlideShowing ? 0 : -UIScreen.screenWidth,
+                        height: 0)
+                )
+            }
         }
     }
 }
@@ -24,6 +72,9 @@ struct HomeView: View {
 class HomeViewModel: ObservableObject {
     @Published var currentTimeString = ""
     @Published var dayOfTheWeek = ""
+    @Published var currentHourAndMinuteString = ""
+    @Published var isAlarmSlideShowing = true
+    @Published var isAlarmOn = true
     private let currentTimeDateFormatter = {
         var dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy MM dd"
@@ -34,14 +85,24 @@ class HomeViewModel: ObservableObject {
         dateFormatter.dateFormat = "EEEE"
         return dateFormatter
     }()
+    private let currentHourAndMinuteDateFormatter = {
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "a h : mm"
+        return dateFormatter
+    }()
     
     init() {
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(addPeriodicTimeObserver), userInfo: nil, repeats: true)
     }
     
+    func alarmSlideShowingButtonTouched() {
+        isAlarmSlideShowing.toggle()
+    }
+    
     @objc private func addPeriodicTimeObserver() {
         currentTimeString = currentTimeDateFormatter.string(from: Date.now)
         dayOfTheWeek = dayOfTheWeekFormatter.string(from: Date.now)
+        currentHourAndMinuteString = currentHourAndMinuteDateFormatter.string(from: Date.now)
     }
 }
 
