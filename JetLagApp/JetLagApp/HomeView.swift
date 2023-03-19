@@ -65,6 +65,12 @@ struct HomeView: View {
                         height: 0)
                 )
             }
+            
+            /// Gauge
+            GaugeView(gauge: viewModel.gaugeValue, lineRatio: viewModel.gaugeLineRatio)
+                .padding(.vertical, 30)
+                .padding(.horizontal, 60)
+            
         }
     }
 }
@@ -75,6 +81,8 @@ class HomeViewModel: ObservableObject {
     @Published var currentHourAndMinuteString = ""
     @Published var isAlarmSlideShowing = true
     @Published var isAlarmOn = true
+    @Published var gaugeValue: Double = 0.7
+    @Published var gaugeLineRatio: Double = 0.1
     private let currentTimeDateFormatter = {
         var dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy MM dd"
