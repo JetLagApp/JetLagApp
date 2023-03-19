@@ -12,20 +12,32 @@ struct GaugeView: View {
     @State private var radius: Double = 0
     
     var body: some View {
-        Circle()
-            .trim(from: 0, to: gauge)
-            .stroke(style: StrokeStyle(lineWidth: radius * lineRatio))
-            .fill(.black)
-            .padding(radius * lineRatio - radius * lineRatio / 2)
-            .rotationEffect(.degrees(-90))
-            .background {
-                GeometryReader { proxy in
-                    Color.clear
-                        .onAppear {
-                            radius = min(proxy.size.width, proxy.size.height) / 2
-                        }
+        ZStack(alignment: .bottom) {
+            Circle()
+                .trim(from: 0, to: gauge)
+                .stroke(style: StrokeStyle(lineWidth: radius * lineRatio))
+                .fill(.black)
+                .padding(radius * lineRatio - radius * lineRatio / 2)
+                .rotationEffect(.degrees(-90))
+                .background {
+                    GeometryReader { proxy in
+                        Color.clear
+                            .onAppear {
+                                radius = min(proxy.size.width, proxy.size.height) / 2
+                            }
+                    }
                 }
+            
+            VStack {
+                Text("수면")
+                Text("\(Int(gauge * 100))%")
             }
+            .foregroundColor(Color.white)
+            .padding()
+            .background {
+                Circle()
+            }
+        }
     }
 }
 
