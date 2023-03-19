@@ -71,6 +71,18 @@ struct HomeView: View {
                 .padding(.vertical, 30)
                 .padding(.horizontal, 60)
             
+            /// Sleep start button
+            Button {
+            } label: {
+                Text("취침 시작")
+                    .foregroundColor(.white)
+                    .padding(.vertical, 15)
+                    .padding(.horizontal, 53.5)
+                    .background {
+                        RoundedRectangle(cornerRadius: 13)
+                            .foregroundColor(Color(hex: 0xFFA78B))
+                    }
+            }
         }
     }
 }
