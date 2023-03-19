@@ -13,6 +13,8 @@
 		0EE9548829739228001F7EE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE9548729739228001F7EE4 /* Preview Assets.xcassets */; };
 		A86B5BA529AF175B00D455A4 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86B5BA429AF175B00D455A4 /* Extension+Color.swift */; };
 		A86B5BA729B2303D00D455A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86B5BA629B2303D00D455A4 /* HomeView.swift */; };
+		A86B5BA929B33D3A00D455A4 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86B5BA829B33D3A00D455A4 /* Extension+View.swift */; };
+		A86B5BAB29B3478A00D455A4 /* Extension+UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86B5BAA29B3478A00D455A4 /* Extension+UIScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A85516BD2973A179001A5A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A86B5BA429AF175B00D455A4 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		A86B5BA629B2303D00D455A4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A86B5BA829B33D3A00D455A4 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		A86B5BAA29B3478A00D455A4 /* Extension+UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIScreen.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				A85516BD2973A179001A5A73 /* Info.plist */,
 				A86B5BA429AF175B00D455A4 /* Extension+Color.swift */,
+				A86B5BA829B33D3A00D455A4 /* Extension+View.swift */,
+				A86B5BAA29B3478A00D455A4 /* Extension+UIScreen.swift */,
 				0EE9548029739227001F7EE4 /* JetLagAppApp.swift */,
 				0EE9548229739227001F7EE4 /* ContentView.swift */,
 				A86B5BA629B2303D00D455A4 /* HomeView.swift */,
@@ -146,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE9548329739227001F7EE4 /* ContentView.swift in Sources */,
+				A86B5BAB29B3478A00D455A4 /* Extension+UIScreen.swift in Sources */,
 				A86B5BA729B2303D00D455A4 /* HomeView.swift in Sources */,
+				A86B5BA929B33D3A00D455A4 /* Extension+View.swift in Sources */,
 				A86B5BA529AF175B00D455A4 /* Extension+Color.swift in Sources */,
 				0EE9548129739227001F7EE4 /* JetLagAppApp.swift in Sources */,
 			);
