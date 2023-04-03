@@ -30,6 +30,13 @@
 		A86B5BA829B33D3A00D455A4 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		A86B5BAA29B3478A00D455A4 /* Extension+UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIScreen.swift"; sourceTree = "<group>"; };
 		A86B5BAC29BB513500D455A4 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		A8CE194A29DAFAFF00640A8B /* Helvetica.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Helvetica.ttf; sourceTree = "<group>"; };
+		A8CE194B29DAFAFF00640A8B /* Helvetica-Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Oblique.ttf"; sourceTree = "<group>"; };
+		A8CE194C29DAFAFF00640A8B /* helvetica-light-587ebe5a59211.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-light-587ebe5a59211.ttf"; sourceTree = "<group>"; };
+		A8CE194D29DAFAFF00640A8B /* Helvetica-BoldOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-BoldOblique.ttf"; sourceTree = "<group>"; };
+		A8CE194E29DAFAFF00640A8B /* Helvetica-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Bold.ttf"; sourceTree = "<group>"; };
+		A8CE194F29DAFAFF00640A8B /* helvetica-rounded-bold-5871d05ead8de.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-rounded-bold-5871d05ead8de.otf"; sourceTree = "<group>"; };
+		A8CE195029DAFAFF00640A8B /* helvetica-compressed-5871d14b6903a.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-compressed-5871d14b6903a.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,7 @@
 		0EE9547F29739227001F7EE4 /* JetLagApp */ = {
 			isa = PBXGroup;
 			children = (
+				A8CE194929DAFAF200640A8B /* Font */,
 				A85516BD2973A179001A5A73 /* Info.plist */,
 				A86B5BA429AF175B00D455A4 /* Extension+Color.swift */,
 				A86B5BA829B33D3A00D455A4 /* Extension+View.swift */,
@@ -82,6 +90,20 @@
 				0EE9548729739228001F7EE4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8CE194929DAFAF200640A8B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A8CE194E29DAFAFF00640A8B /* Helvetica-Bold.ttf */,
+				A8CE194D29DAFAFF00640A8B /* Helvetica-BoldOblique.ttf */,
+				A8CE195029DAFAFF00640A8B /* helvetica-compressed-5871d14b6903a.otf */,
+				A8CE194C29DAFAFF00640A8B /* helvetica-light-587ebe5a59211.ttf */,
+				A8CE194B29DAFAFF00640A8B /* Helvetica-Oblique.ttf */,
+				A8CE194F29DAFAFF00640A8B /* helvetica-rounded-bold-5871d05ead8de.otf */,
+				A8CE194A29DAFAFF00640A8B /* Helvetica.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
