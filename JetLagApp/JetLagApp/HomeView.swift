@@ -72,13 +72,22 @@ struct HomeView: View {
                     )
                 }
                 
-                /// Gauge
-                GaugeView(gauge: viewModel.gaugeValue, lineRatio: viewModel.gaugeLineRatio)
-                    .padding(.vertical, 30)
-                    .padding(.horizontal, 60)
-                    .background {
-                        Image(viewModel.centerImageName)
-                    }
+                /// Gauge with StateCircleView
+                StateCircleView {
+                    Text("DAY")
+                        .foregroundColor(.white)
+                } gaugeView: {
+                    GaugeView(gauge: viewModel.gaugeValue, lineRatio: viewModel.gaugeLineRatio)
+                        .foregroundColor(.black)
+                        .background {
+                            Image(viewModel.centerImageName)
+                        }
+                }
+                .foregroundColor(.green)
+                .padding(.horizontal, 57)
+                .padding(.top, 30)
+                .padding(.bottom, 57)
+                
                 
                 /// Sleep start button
                 Button {
