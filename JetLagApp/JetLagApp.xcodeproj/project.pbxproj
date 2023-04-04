@@ -17,6 +17,7 @@
 		A86B5BAB29B3478A00D455A4 /* Extension+UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86B5BAA29B3478A00D455A4 /* Extension+UIScreen.swift */; };
 		A86B5BAD29BB513500D455A4 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86B5BAC29BB513500D455A4 /* GaugeView.swift */; };
 		A8CE195229DAFE3E00640A8B /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CE195129DAFE3E00640A8B /* Extension+Font.swift */; };
+		A8CE195429DC508800640A8B /* StateCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CE195329DC508800640A8B /* StateCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		A8CE194F29DAFAFF00640A8B /* helvetica-rounded-bold-5871d05ead8de.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-rounded-bold-5871d05ead8de.otf"; sourceTree = "<group>"; };
 		A8CE195029DAFAFF00640A8B /* helvetica-compressed-5871d14b6903a.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-compressed-5871d14b6903a.otf"; sourceTree = "<group>"; };
 		A8CE195129DAFE3E00640A8B /* Extension+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Font.swift"; sourceTree = "<group>"; };
+		A8CE195329DC508800640A8B /* StateCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				A86B5BAC29BB513500D455A4 /* GaugeView.swift */,
 				0EE9548429739228001F7EE4 /* Assets.xcassets */,
 				0EE9548629739228001F7EE4 /* Preview Content */,
+				A8CE195329DC508800640A8B /* StateCircleView.swift */,
 			);
 			path = JetLagApp;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				A86B5BA729B2303D00D455A4 /* HomeView.swift in Sources */,
 				A86B5BA929B33D3A00D455A4 /* Extension+View.swift in Sources */,
 				A86B5BA529AF175B00D455A4 /* Extension+Color.swift in Sources */,
+				A8CE195429DC508800640A8B /* StateCircleView.swift in Sources */,
 				0EE9548129739227001F7EE4 /* JetLagAppApp.swift in Sources */,
 				A8CE195229DAFE3E00640A8B /* Extension+Font.swift in Sources */,
 				A86B5BAD29BB513500D455A4 /* GaugeView.swift in Sources */,
