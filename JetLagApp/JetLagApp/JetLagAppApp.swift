@@ -22,6 +22,7 @@ struct JetLagAppApp: App {
                     .tabItem {
                         Label("홈", image: "tabbarHome")       
                     }
+                CalenderView()
                     .tabItem {
                         Label("일정", image: "tabbarCalendar")
                     }
