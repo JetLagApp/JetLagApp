@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EC3C0EE29D718F80056257B /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC3C0ED29D718F80056257B /* CalenderView.swift */; };
 		0EE9548129739227001F7EE4 /* JetLagAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE9548029739227001F7EE4 /* JetLagAppApp.swift */; };
 		0EE9548329739227001F7EE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE9548229739227001F7EE4 /* ContentView.swift */; };
 		0EE9548529739228001F7EE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE9548429739228001F7EE4 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EC3C0ED29D718F80056257B /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		0EE9547D29739227001F7EE4 /* JetLagApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JetLagApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE9548029739227001F7EE4 /* JetLagAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JetLagAppApp.swift; sourceTree = "<group>"; };
 		0EE9548229739227001F7EE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				A85516BD2973A179001A5A73 /* Info.plist */,
 				A86B5BA429AF175B00D455A4 /* Extension+Color.swift */,
+				0EC3C0ED29D718F80056257B /* CalenderView.swift */,
 				A86B5BA829B33D3A00D455A4 /* Extension+View.swift */,
 				A86B5BAA29B3478A00D455A4 /* Extension+UIScreen.swift */,
 				0EE9548029739227001F7EE4 /* JetLagAppApp.swift */,
@@ -160,6 +163,7 @@
 				A86B5BA929B33D3A00D455A4 /* Extension+View.swift in Sources */,
 				A86B5BA529AF175B00D455A4 /* Extension+Color.swift in Sources */,
 				0EE9548129739227001F7EE4 /* JetLagAppApp.swift in Sources */,
+				0EC3C0EE29D718F80056257B /* CalenderView.swift in Sources */,
 				A86B5BAD29BB513500D455A4 /* GaugeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

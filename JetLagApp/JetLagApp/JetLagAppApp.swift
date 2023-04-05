@@ -22,7 +22,6 @@ struct JetLagAppApp: App {
                     .tabItem {
                         Label("홈", image: "tabbarHome")       
                     }
-                ContentView()
                     .tabItem {
                         Label("일정", image: "tabbarCalendar")
                     }
