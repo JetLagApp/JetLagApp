@@ -30,7 +30,9 @@ struct GaugeView: View {
             
             VStack {
                 Text("수면")
+                    .helveticaFont(size: 8, weight: .bold)
                 Text("\(Int(gauge * 100))%")
+                    .helveticaFont(size: 11, weight: .bold)
             }
             .foregroundColor(Color.white)
             .padding()

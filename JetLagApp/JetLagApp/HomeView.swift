@@ -20,9 +20,9 @@ struct HomeView: View {
                 /// Today timer
                 HStack(alignment: .bottom) {
                     Text(viewModel.currentTimeString)
-                        .font(.system(size: 47.27, weight: .bold))
+                        .helveticaFont(size: 47.27, weight: .bold)
                     Text(viewModel.dayOfTheWeek)
-                        .font(.system(size: 11.82, weight: .bold))
+                        .helveticaFont(size: 11.82, weight: .bold)
                         .padding(.bottom, 10)
                 }
                 
@@ -52,6 +52,7 @@ struct HomeView: View {
                             Spacer()
                             Spacer()
                             Text(viewModel.currentHourAndMinuteString)
+                                .helveticaFont(size: 17, weight: .regular)
                             Spacer()
                             Image(systemName: "chevron.right")
                             Spacer()
@@ -83,6 +84,7 @@ struct HomeView: View {
                 Button {
                 } label: {
                     Text("취침 시작")
+                        .helveticaFont(size: 17, weight: .bold)
                         .foregroundColor(.white)
                         .padding(.vertical, 15)
                         .padding(.horizontal, 53.5)
