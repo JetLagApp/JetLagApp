@@ -75,6 +75,9 @@ struct HomeView: View {
                 GaugeView(gauge: viewModel.gaugeValue, lineRatio: viewModel.gaugeLineRatio)
                     .padding(.vertical, 30)
                     .padding(.horizontal, 60)
+                    .background {
+                        Image(viewModel.centerImageName)
+                    }
                 
                 /// Sleep start button
                 Button {
@@ -101,6 +104,7 @@ class HomeViewModel: ObservableObject {
     @Published var isAlarmOn = true
     @Published var gaugeValue: Double = 0.7
     @Published var gaugeLineRatio: Double = 0.1
+    @Published var centerImageName = "1"
     private let currentTimeDateFormatter = {
         var dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy MM dd"
